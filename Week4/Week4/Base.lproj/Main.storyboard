@@ -20,6 +20,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQP-gr-RFy">
                                 <rect key="frame" x="227" y="97" width="146" height="30"/>
                                 <state key="normal" title="Go to next from Swift"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dIF-j0-8gO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxM-E0-h3g">
                                 <rect key="frame" x="232" y="28" width="137" height="30"/>
@@ -73,6 +76,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nbP-Sb-6eS"/>
+        <segue reference="Hqr-qw-vKd"/>
     </inferredMetricsTieBreakers>
 </document>

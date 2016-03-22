@@ -20,6 +20,26 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func buttonClicked(sender: AnyObject) {
+        print("Button clicked!")
+        self.performSegueWithIdentifier("transition", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "transition") {
+            print("prepareForSegue called")
+            let vc : UIViewController = segue.destinationViewController
+        }
+    }
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        print("shouldPerformSegueWithIdentifier called")
+        if(!identifier.isEmpty && identifier == "transition")
+        {
+            return true
+        }
+        return false
+    }
 
 }
 
