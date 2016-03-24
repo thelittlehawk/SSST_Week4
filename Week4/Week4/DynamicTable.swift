@@ -39,7 +39,7 @@ class DynamicTable: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var controller:DetailViewController = segue.destinationViewController as! DetailViewController
+        let controller:DetailViewController = segue.destinationViewController as! DetailViewController
         
         controller.textString = "Test 1234"
     }
